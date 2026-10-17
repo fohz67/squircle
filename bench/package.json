@@ -1,0 +1,16 @@
+{
+  "name": "bench",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:wasm": "asc wasm/squircle.ts -o wasm/build/squircle.wasm -O3 --runtime stub --noAssert",
+    "bench": "pnpm build:wasm && node --expose-gc path.bench.mjs",
+    "bench:browser": "node browser.bench.mjs"
+  },
+  "dependencies": {
+    "@fohz67/squircle": "workspace:*",
+    "assemblyscript": "^0.28.0",
+    "figma-squircle": "1.1.0",
+    "playwright-core": "1.63.0"
+  }
+}
