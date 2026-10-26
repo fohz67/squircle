@@ -192,4 +192,4 @@ Corner-smoothing geometry from Figma's [“Desperately seeking squircles”](htt
 
 ## License
 
-[MIT](LICENSE) © fohz67
+[MIT](LICENSE) © fohz67. Third-party notices: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

@@ -1,0 +1,33 @@
+name: Bug report
+description: Something renders wrong, crashes or is slower than expected.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, and what you got instead. Screenshots help a lot for shape issues.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: A minimal snippet, or a link to a CodeSandbox / StackBlitz.
+      render: tsx
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "@fohz67/squircle version"
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Browser, OS and framework
+      placeholder: "Chrome 141, macOS 15, React 19 / Next.js 16"
+    validations:
+      required: true

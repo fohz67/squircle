@@ -7,3 +7,4 @@ bench/wasm/build
 packages/squircle/styles.css
 packages/squircle/README.md
 dist-ssr
+packages/squircle/THIRD_PARTY_NOTICES.md

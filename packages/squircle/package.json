@@ -36,7 +36,8 @@
     "dist",
     "styles.css",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -59,7 +60,7 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "bench": "node --expose-gc bench/path.bench.mjs",
-    "prepack": "cp ../../README.md README.md && pnpm build"
+    "prepack": "cp ../../README.md ../../THIRD_PARTY_NOTICES.md . && pnpm build"
   },
   "peerDependencies": {
     "react": ">=17"
