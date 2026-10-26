@@ -1169,3 +1169,22 @@ footer a:hover {
   mask-image: linear-gradient(to right, transparent, #000 22%), linear-gradient(to top, transparent, #000 22%);
   mask-composite: intersect;
 }
+
+/* theme toggle icon, chosen by CSS so it needs no client state */
+.i-sun {
+  display: none;
+}
+:root[data-theme="dark"] .i-sun {
+  display: block;
+}
+:root[data-theme="dark"] .i-moon {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .i-sun {
+    display: block;
+  }
+  :root:not([data-theme="light"]) .i-moon {
+    display: none;
+  }
+}

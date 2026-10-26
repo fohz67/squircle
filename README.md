@@ -6,6 +6,11 @@
 
 One `ResizeObserver` for the whole page · zero React re-renders · never a frame behind · borders and gradient borders on a single element · 3.9 KB gzip with React · zero dependencies
 
+[![npm](https://img.shields.io/npm/v/@fohz67/squircle?color=000&label=npm)](https://www.npmjs.com/package/@fohz67/squircle)
+[![CI](https://github.com/fohz67/squircle/actions/workflows/ci.yml/badge.svg)](https://github.com/fohz67/squircle/actions/workflows/ci.yml)
+[![minzipped size](https://img.shields.io/bundlejs/size/@fohz67/squircle?color=000&label=size)](https://bundlejs.com/?q=@fohz67/squircle)
+[![license](https://img.shields.io/github/license/fohz67/squircle?color=000)](LICENSE)
+
 [Website & playground](https://fohz67.github.io/squircle/) · [npm](https://www.npmjs.com/package/@fohz67/squircle) · [Performance notes](docs/PERFORMANCE.md)
 
 </div>

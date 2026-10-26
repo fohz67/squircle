@@ -55,15 +55,16 @@ export function App() {
 /* ------------------------------------------------------------------- nav */
 
 function Nav() {
-  const [theme, setTheme] = useState<string | undefined>(() => document.documentElement.dataset.theme);
-  const dark = theme ? theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  // No theme state: the icon is picked by CSS, so server HTML and the first
+  // client render are identical whatever theme the visitor uses.
   const toggle = () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
     const next = dark ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
+    root.dataset.theme = next;
     try {
       localStorage.setItem("theme", next);
     } catch {}
-    setTheme(next);
   };
   return (
     <nav className="nav">
@@ -87,7 +88,8 @@ function Nav() {
           </Squircle>
           <Squircle asChild cornerRadius={9} cornerSmoothing={1}>
             <button className="icon-btn" onClick={toggle} aria-label="Toggle theme">
-              {dark ? <Sun size={16} /> : <Moon size={16} />}
+              <Sun size={16} className="i-sun" />
+              <Moon size={16} className="i-moon" />
             </button>
           </Squircle>
         </div>

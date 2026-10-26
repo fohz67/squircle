@@ -4,7 +4,7 @@
   "description": "The fastest Figma-accurate squircles for the web. One ResizeObserver, zero re-renders, real borders (even gradients). Zero dependencies.",
   "license": "MIT",
   "author": "fohz67 (https://github.com/fohz67)",
-  "homepage": "https://github.com/fohz67/squircle#readme",
+  "homepage": "https://fohz67.github.io/squircle/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fohz67/squircle.git",
@@ -12,14 +12,21 @@
   },
   "bugs": "https://github.com/fohz67/squircle/issues",
   "keywords": [
-    "squircle",
-    "superellipse",
-    "corner-smoothing",
-    "figma",
-    "ios",
+    "border",
     "border-radius",
     "clip-path",
-    "react"
+    "corner-smoothing",
+    "css",
+    "figma",
+    "ios",
+    "ios-corners",
+    "react",
+    "react-component",
+    "rounded-corners",
+    "smooth-corners",
+    "squircle",
+    "squircles",
+    "superellipse"
   ],
   "type": "module",
   "sideEffects": [

@@ -6,3 +6,4 @@ site/dist
 bench/wasm/build
 packages/squircle/styles.css
 packages/squircle/README.md
+dist-ssr
